@@ -524,7 +524,7 @@ DEPENDENCIES
   loofah
   momentjs-rails (>= 2.9.0)
   mustache (~> 1.0)
-  mysql2 (= 0.3.15)
+  mysql2
   net-ssh!
   nokogiri
   oj
@@ -560,4 +560,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
