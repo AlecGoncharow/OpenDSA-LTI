@@ -20,7 +20,9 @@ role :db,  %w{deploy@18.216.228.69}
 # This can be used to drop a more detailed server definition into the
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
-server '128.173.236.80', user: 'deploy', roles: %w{web app db}, my_property: :my_value
+# server '128.173.236.80', user: 'deploy', roles: %w{web app db}, my_property: :my_value
+
+server '18.216.228.69', user: 'deploy', roles: %w{web app db}, my_property: :my_value
 
 
 # Custom SSH Options
@@ -30,11 +32,11 @@ server '128.173.236.80', user: 'deploy', roles: %w{web app db}, my_property: :my
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+  set :ssh_options, {
+    keys: %w(/home/vagrant/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey password)
+  }
 #
 # And/or per server (overrides global)
 # ------------------------------------
