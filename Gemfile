@@ -33,7 +33,7 @@ gem 'loofah'
 gem 'truncate_html'
 gem 'puma', '~> 3.11.4'
 gem 'tzinfo' # For timezone support
-gem 'mysql2', '>=0.5.2'
+gem 'mysql2', '>=0.3.13'
 
 # Bootstrap Datepicker
 gem 'momentjs-rails', '>= 2.9.0'
